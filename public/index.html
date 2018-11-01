@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+    <title>Aurora Browser</title>
+
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css"/>
+    </noscript>
+</head>
+<body class="is-preload">
+<div id="wrapper">
+    <div id="bg"></div>
+    <div id="overlay"></div>
+    <div id="main">
+
+        <!-- Header -->
+        <header id="header">
+            <!--<h1>오로라 브라우저로<br>VR 세계를 탐험하세요!</h1>-->
+            <!--<p>더 쉽고, 안전하고, 빠른 VR 브라우저 다운 받기</p>-->
+            <p>The easiest way to navigate through VR websites</p>
+            <h1>Aurora Browser</h1>
+            <nav>
+                <ul>
+                    <li><a href="https://firebasestorage.googleapis.com/v0/b/auroravr-ae8fc.appspot.com/o/AuroraBrowser.zip?alt=media&token=085060d0-24ee-4eca-8e71-2818b61fb2d3" class="icon fa-desktop"><span class="label">download browser</span></a></li>
+                    <li><a href="/" class="icon fa-server"><span class="label">download dedicated server</span></a></li>
+                    <li><a href="https://github.com/AuroraBrowser" target="_blank" class="icon fa-github"><span class="label">github</span></a></li>
+                    <li><a href="https://pypi.org/project/auroravr/" target="_blank" class="icon fa-magic"><span class="label">python package</span></a></li>
+                </ul>
+            </nav>
+            <p>왼쪽부터 브라우저, 데디케이티드 서버, 깃헙 링크, 파이썬 패키지 링크</p>
+        </header>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <span class="copyright">&copy; TicketPlace</span>
+        </footer>
+
+    </div>
+</div>
+<script>
+    window.onload = function () {
+        document.body.classList.remove('is-preload');
+    }
+    window.ontouchmove = function () {
+        return false;
+    }
+    window.onorientationchange = function () {
+        document.body.scrollTop = 0;
+    }
+</script>
+</body>
+</html>
